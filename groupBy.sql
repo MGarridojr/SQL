@@ -26,3 +26,5 @@ JOIN courses c ON e."courseId" = c.id
 WHERE e.status='ongoing' OR e.status='finished'
 GROUP BY s."name", c."name", e.status 
 ORDER BY COUNT(e."userId") desc LIMIT 3;
+
+
